@@ -4,8 +4,9 @@ public class Bugs extends Insects {
 
     int legs; //количество лап
 
-    public Bugs() {
-        super();
+    public Bugs(boolean mammals, String color, String type, boolean danger, int legs) {
+        super(mammals, color, type, danger);
+        this.legs = legs;
     }
 
     public void setLegs(int legs) {

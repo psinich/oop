@@ -3,9 +3,12 @@ package com.company;
 public class Insects extends Animal {
     boolean danger; // опасно для человека
 
-    Insects() {
-        super();
+    Insects(boolean mammals, String color, String type, boolean danger) {
+        super(mammals, color, type);
+        this.danger = danger;
     }
+
+
 
     public void setDanger(boolean danger) {
         this.danger = danger;
